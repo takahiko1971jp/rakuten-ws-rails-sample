@@ -1,4 +1,10 @@
 language: ruby
 rvm:
-  - 2.0.0
-
+- 2.0.0
+deploy:
+  provider: heroku
+  api_key:
+    secure: DOrHe5ZJMGEbGGKGQ8IQAY+7FL5KBfOLm0LqGt6sY6uWLiLPY4GwCxP4Ron3xjih+BV5zkYpnngFuD4HJHBylHwG7RexIoRxySDP14b1/pnS8QSO86y6cAb8hM3TAEk7t8mBWfiplrtrxVRgs0szD/fFARk9CBvhNDTOmkr7r/0=
+  app: rakuten-ws-rails-sample
+  on:
+    repo: takahiko1971jp/rakuten-ws-rails-sample
